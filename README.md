@@ -1,15 +1,3 @@
-TODO
-- Test send data to current (or find something more elegant)
-- Test ordering of drawers/root view w/ overridden drawers
-- Create Drawer that can be subclassed? Or mb just stick with example.
-- Unit tests...
-- Finish commenting
-- Finish doc
-
------------------------------------------
-markdown file begins here
-
-
 # MGAMenuController
 Created by: Mattieu Gamache-Asselin
 
