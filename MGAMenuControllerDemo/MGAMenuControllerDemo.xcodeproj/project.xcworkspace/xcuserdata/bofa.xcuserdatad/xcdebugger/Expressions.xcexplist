@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[MGAMenuController setRootViewController:animated:]:MGAMenuController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rightBarButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MGAMenuController dismissDrawer:Direction:animated:duration:delay:]:MGAMenuController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_currentRootViewController.navigationItem.rightBarButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DrawerExample2 tableView:didSelectRowAtIndexPath:]:DrawerExample2.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "theMenuController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MGAMenuController showDrawer:Direction:]:MGAMenuController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_leftDrawer">
+            </PersistentString>
+            <PersistentString
+               value = "_rightDrawer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
