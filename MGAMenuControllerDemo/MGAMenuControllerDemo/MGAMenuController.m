@@ -337,6 +337,8 @@
     if (!leftDrawerVisible) {
         [tapDismissGesture addTarget:self action:@selector(dismissLeftDrawer)];
         [self showDrawer:displayedLeftDrawer Direction:kSHOW_LEFT];
+    }else{
+        [self dismissLeftDrawer];
     }
 }
 
@@ -346,6 +348,8 @@
     if (!rightDrawerVisible) {
         [tapDismissGesture addTarget:self action:@selector(dismissRightDrawer)];
         [self showDrawer:displayedRightDrawer Direction:kSHOW_RIGHT];
+    }else{
+        [self dismissRightDrawer];
     }
 }
 
