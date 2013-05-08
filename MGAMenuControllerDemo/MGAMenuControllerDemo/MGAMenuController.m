@@ -41,6 +41,7 @@
     
     BOOL leftDrawerVisible;
     BOOL rightDrawerVisible;
+    UIView *touchInterceptorView;
     
 }
 /** Current view controller as root in the nav stack */
@@ -396,7 +397,9 @@
                          //Set flag
                          direction == kSHOW_LEFT ? (leftDrawerVisible = YES) : (rightDrawerVisible = YES);
                          //Add Gesture recognizer to dismiss the drawer
-                         [rootView addGestureRecognizer:tapDismissGesture];
+                         touchInterceptorView = [[UIView alloc] initWithFrame:rootView.bounds];
+                         [touchInterceptorView addGestureRecognizer:tapDismissGesture];
+                         [rootView insertSubview:touchInterceptorView atIndex:INT_MAX];
                      }
      ];
 }
@@ -429,7 +432,7 @@
 - (void) dismissDrawer:(UIViewController<MGADrawerViewControllerProtocol> *)drawerVC Direction:(SlideDirection)direction animated:(BOOL)animated duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     
     //Remove tap gesture recognizer    
-    [rootView removeGestureRecognizer:tapDismissGesture];
+    [touchInterceptorView removeFromSuperview];
     if (direction == kHIDE_LEFT)
         [tapDismissGesture removeTarget:self action:@selector(dismissLeftDrawer)];
     else
